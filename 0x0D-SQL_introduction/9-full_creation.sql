@@ -3,8 +3,8 @@
 -- should not return any errors if table exists
 
 CREATE TABLE IF NOT EXISTS second_table (
-	id INT NOT NULL AUTO_INCREMENT,
-	name VARCHAR(256) NOT NULL,
+	id INT,
+	name VARCHAR(256),
 	score INT
 );
 
