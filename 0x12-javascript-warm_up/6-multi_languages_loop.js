@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 
 const args = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
