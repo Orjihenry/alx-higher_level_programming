@@ -1,18 +1,7 @@
-#!/usr/bin/node
+#!/opt/homebrew/bin/node
 
-const factorial = (num) => {
-  if (isNaN(num)) {
-    return 1;
-  }
+function add (a, b) {
+  return a + b;
+}
 
-  num = parseInt(num);
-
-  if (num === 0) {
-    return 1;
-  }
-
-  return num * factorial(num - 1);
-};
-
-const arg = process.argv[2];
-console.log(factorial(arg));
+console.log(add(Number(process.argv[2]), Number(process.argv[3])));
