@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
 class Rectangle {
-  /** Empty class */
+  // An empty class
 }
