@@ -18,7 +18,7 @@ if __name__ == '__main__':   # Run code only when executed directly.
 
     db_cursor = db_connect.cursor()   # Cursor object to execute queries.
 
-    db_cursor.execute("SELECT * FROM states WHERE name LIKE N% \
+    db_cursor.execute("SELECT * FROM states WHERE name LIKE BINARY ' N%' \
         ORDER BY states.id ASC")   # Filters only states starting with upper N
 
     states = db_cursor.fetchall()  # Checks whole data and displays only result
