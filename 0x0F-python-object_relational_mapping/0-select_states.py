@@ -18,7 +18,7 @@ if __name__ == '__main__':   # Run code only when executed directly.
 
     db_cursor.execute("SELECT * FROM states")
 
-    rows_selected = db_cursor.fetchall()
+    states = db_cursor.fetchall()
 
-    for row in rows_selected:
-        print(row)
+    for state in states:
+        print(state)
