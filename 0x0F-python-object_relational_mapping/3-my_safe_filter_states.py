@@ -20,11 +20,9 @@ if __name__ == '__main__':
                          passwd=argv[2], db=argv[3])
 
     db_cursor = db_connect.cursor()
+    match = sys.argv[4]
 
-    db_cursor.execute(
-        "SELECT * FROM states WHERE name LIKE \
-                BINARY %(name)s ORDER BY states.id ASC", {'name': argv[4]})
-
+    cur.execute("SELECT * FROM states WHERE name LIKE %s", (match, ))
     rows = cur.fetchall()
 
     if rows is not None:
